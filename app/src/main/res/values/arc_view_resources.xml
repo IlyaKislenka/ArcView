@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ArcView">
+
+        <attr name="circleArcColor" format="color" />
+        <attr name="progressArcColor" format="color" />
+        <attr name="shadowColor" format="color" />
+
+        <attr name="footerText" format="string" />
+
+        <attr name="startArcAngle" format="integer" />
+        <attr name="artLengthDegrees" format="integer" />
+
+        <attr name="enableWeightsSupport" format="boolean" />
+
+        <attr name="shadowWidth" format="dimension" />
+    </declare-styleable>
+
+    <color name="externalColor">#e9e8e8</color>
+    <color name="shadowColor">#8c8c8c</color>
+    <color name="blackShadowColor">#6d5b5a5a</color>
+    <color name="internalColor">#f36f21</color>
+    <color name="fontColor">#545454</color>
+
+    <dimen name="external_arc_width">20dp</dimen>
+    <dimen name="internal_arc_width">10dp</dimen>
+    <dimen name="base_arc_view_size">135dp</dimen>
+    <dimen name="text_size_percentage">72sp</dimen>
+    <dimen name="text_size_center_percentage_hundred">65sp</dimen>
+    <dimen name="text_size_percent">15sp</dimen>
+    <dimen name="text_size_footer">13sp</dimen>
+</resources>

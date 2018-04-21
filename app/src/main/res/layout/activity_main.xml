@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.i_kislenko.arcview.ArcView
+        android:id="@+id/arcView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+
+        app:footerText="OVERALL" />
+
+
+    <com.example.i_kislenko.arcview.ArcView
+        android:id="@+id/arcViewWithCustomAngle"
+
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+
+        android:layout_alignParentEnd="true"
+
+        app:artLengthDegrees="180"
+        app:footerText="FOOTER"
+
+        app:startArcAngle="135" />
+
+
+    <com.example.i_kislenko.arcview.ArcView
+        android:id="@+id/arcViewWithCustomColor"
+
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        app:startArcAngle="0"
+        app:artLengthDegrees="369"
+
+        app:circleArcColor="#FF86560E"
+        app:progressArcColor="@color/colorPrimaryDark"
+
+        app:shadowColor="@android:color/white" />
+
+    <com.example.i_kislenko.arcview.ArcView
+        android:id="@+id/littleArcView"
+        
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_centerInParent="true"
+
+        app:footerText="footer"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignTop="@id/arcViewWithCustomColor"
+        android:layout_toEndOf="@+id/arcViewWithCustomColor"
+
+        android:orientation="vertical">
+
+        <com.example.i_kislenko.arcview.ArcView
+            android:id="@+id/arcViewWithWeightSupport"
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:layout_gravity="center_horizontal"
+
+            android:layout_weight="1"
+
+            app:enableWeightsSupport="true"
+
+            app:footerText="Percent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
